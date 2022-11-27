@@ -1,0 +1,55 @@
+.todos {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.todos__title {
+    padding: 35px 55px;
+    position: sticky;
+    top: 42px;
+    left: 0;
+    z-index: 1;
+    background: var(--color-bg);
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    strong {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.todos__more-btn {
+    padding: 7px;
+    border-radius: 6px;
+    background: transparent;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+        background: #eee;
+    }
+}
+.todos__border {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    position: sticky;
+    top: 137px;
+    transition: all 0.1s ease-in-out;
+}
+.todos__body {
+    transition: all 0.1s ease-in-out;
+    padding: 0 55px;
+}
+
+@media screen and (max-width: 700px) {
+    .todos__title {
+        padding: 35px 25px 30px;
+    }
+    .todos__body {
+        padding: 0 25px;
+    }
+}

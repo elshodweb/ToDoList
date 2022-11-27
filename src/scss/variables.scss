@@ -1,0 +1,16 @@
+html[data-theme="dark"] {
+    --color-text: #000;
+    --color-bg-nav: #cfcfcf;
+    --color-bg: #e1e1e1;
+    --color-nav: #dbd000;
+    --color-btn-active: #f3f3f3c3;
+    --color-btn-hover: #f3f3f390;
+}
+html[data-theme="light"] {
+    --color-text: #000;
+    --color-bg-nav: #eeeeee;
+    --color-bg: #fff;
+    --color-nav: #f2e600;
+    --color-btn-active: #ffffffc3;
+    --color-btn-hover: #ffffff90;
+}

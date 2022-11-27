@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+}
+
+.main.full {
+    padding-left: 300px;
+}
+@media screen and (max-width: 750px) {
+    .main.full {
+        padding-left: 0px;
+    }
+}

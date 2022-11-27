@@ -1,0 +1,13 @@
+html,
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    min-height: 100%;
+}
+button,
+a {
+    cursor: pointer;
+}
+#root,
+.App {
+    height: 100%;
+}

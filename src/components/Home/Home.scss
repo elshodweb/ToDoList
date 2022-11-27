@@ -1,0 +1,43 @@
+.home {
+    padding: 20px 0;
+    height: 100%;
+}
+.home__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.home__title {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 400;
+}
+.home__empty,
+.todo__subtitle {
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 20px;
+}
+.home__nav {
+    margin-top: 20px;
+}
+.todo__subtitle {
+    margin-bottom: 10px;
+}
+.home__categories {
+    padding-left: 20px;
+    text-transform: capitalize;
+    li {
+        list-style: circle;
+    }
+    a {
+        display: block;
+        padding: 5px 0px;
+        &::before {
+            margin-right: 10px;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
