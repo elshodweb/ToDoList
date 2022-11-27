@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Search.scss";
 import close from "./../../assets/icons/close.png";
 import search from "./../../assets/icons/search.png";
