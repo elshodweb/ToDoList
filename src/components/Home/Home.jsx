@@ -20,7 +20,7 @@ function Home() {
               </h4>
               <ul className="home__categories">
                 {categories.map((item) => (
-                  <li>
+                  <li key={item.id}>
                     <Link to={item.path}>{item.name}</Link>
                   </li>
                 ))}

@@ -4,6 +4,7 @@
     height: 100%;
 }
 .todos__title {
+    margin: 0 auto;
     padding: 35px 55px;
     position: sticky;
     top: 42px;
@@ -17,6 +18,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 30px;
+    max-width: 1010px;
     strong {
         width: 100%;
         text-overflow: ellipsis;

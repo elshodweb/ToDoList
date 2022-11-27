@@ -12,7 +12,7 @@ function Main() {
     <div className={`main ${asideObj.isOpen ? "full" : ""}`}>
       <Aside />
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="*" element={<Home />} />
 
         <Route path=":category" element={<Todos />} />
       </Routes>

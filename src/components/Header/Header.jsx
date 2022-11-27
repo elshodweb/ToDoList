@@ -10,6 +10,7 @@ import { useTheme } from "../../hooks/useTheme";
 import { useDispatch } from "react-redux";
 import { togleAside } from "../../store/asideSlice";
 import ModalAdd from "../ModalAdd/ModalAdd";
+import { Link } from "react-router-dom";
 
 function Header() {
   const { setValTheme } = useTheme();
@@ -25,9 +26,9 @@ function Header() {
         >
           <img width={16} height={16} src={menu} alt="menu" />
         </button>
-        <button className="header-icon-btn header__home-i">
+        <Link to={""} className="header-icon-btn header__home-i">
           <img width={16} height={16} src={home} alt="home" />
-        </button>
+        </Link>
         <Search />
       </div>
       <div className="header__right">

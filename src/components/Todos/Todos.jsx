@@ -2,12 +2,20 @@ import React, { useEffect } from "react";
 import "./Todos.scss";
 import more from "./../../assets/icons/more.png";
 import Todo from "../Todo/Todo";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Todos() {
   const storage = localStorage;
   const { category } = useParams();
+  const categories = useSelector((state) => state.category);
+  const navigateTo = useNavigate();
+  useEffect(() => {
+    if (categories.findIndex((item) => item.path === category) < 0) {
+      navigateTo("/");
+    }
+  });
+
   const todos = useSelector((state) => state.todos.data);
   useEffect(() => {
     storage.setItem("todos", JSON.stringify(todos));
