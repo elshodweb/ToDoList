@@ -2,7 +2,7 @@ import more from "./../../assets/icons/more.png";
 import edit from "./../../assets/icons/edit.png";
 import trash from "./../../assets/icons/trash.png";
 import check from "./../../assets/icons/check.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Todo.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { editTodo, removeTodo, todoComlated } from "../../store/todosSlice";
@@ -13,6 +13,9 @@ function Todo({ item }) {
   const [values, setValues] = useState({
     ...item,
   });
+  useEffect(() => {
+    setValues(item);
+  }, [item]);
   const categories = useSelector((state) => state.category);
   const openMore = () => {
     setiIsOpenMore(true);

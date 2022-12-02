@@ -31,7 +31,8 @@
         list-style: circle;
     }
     a {
-        display: block;
+        display: inline-block;
+
         padding: 5px 0px;
         &::before {
             margin-right: 10px;

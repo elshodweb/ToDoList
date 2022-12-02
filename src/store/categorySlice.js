@@ -8,18 +8,18 @@ const categorySlice = createSlice({
     : [
         {
           id: uuidv4(),
-          name: "sport",
-          path: "sport",
+          name: "спорт",
+          path: "спорт",
         },
         {
           id: uuidv4(),
-          name: "work",
-          path: "work",
+          name: "работа",
+          path: "работа",
         },
         {
           id: uuidv4(),
-          name: "study",
-          path: "study",
+          name: "саморазвитие",
+          path: "саморазвитие",
         },
       ],
 

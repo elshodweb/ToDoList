@@ -25,6 +25,10 @@ function Home() {
                   </li>
                 ))}
               </ul>
+
+              <p className="todo__subtitle">
+                Или вы можете создать свои собственные категории и график дня
+              </p>
             </div>
           ) : (
             <div className="home__empty">

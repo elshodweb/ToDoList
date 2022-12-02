@@ -31,8 +31,6 @@ function Aside() {
       let div = document.querySelector(".todos")
         ? document.querySelector(".todos")
         : document.querySelector(".home");
-      console.log(div);
-      // console.log(asideObj.isOpen);
       const removeEvent = () => {
         div.removeEventListener("click", addEvent, true);
       };

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import menu from "./../../assets/icons/menu.png";
-import bell from "./../../assets/icons/bell.png";
 import home from "./../../assets/icons/home.png";
 import plus from "./../../assets/icons/plus.png";
 import brightness from "./../../assets/icons/brightness.png";
-import Search from "../Search/Search";
 import { useTheme } from "../../hooks/useTheme";
 import { useDispatch } from "react-redux";
 import { togleAside } from "../../store/asideSlice";
@@ -26,10 +24,11 @@ function Header() {
         >
           <img width={16} height={16} src={menu} alt="menu" />
         </button>
+
         <Link to={""} className="header-icon-btn header__home-i">
           <img width={16} height={16} src={home} alt="home" />
         </Link>
-        <Search />
+        <div className="header__title">ToDoList</div>
       </div>
       <div className="header__right">
         <button
@@ -37,9 +36,6 @@ function Header() {
           className="header-icon-btn header__add"
         >
           <img width={16} height={16} src={plus} alt="add" />
-        </button>
-        <button className="header-icon-btn header__bell">
-          <img width={16} height={16} src={bell} alt="add" />
         </button>
         <button
           onClick={setValTheme}
